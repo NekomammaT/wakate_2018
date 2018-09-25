@@ -12,12 +12,12 @@
 %　基本情報
 %
 %------ 研究課題名  -------------------------------------------
-\newcommand{\研究課題名}{象の卵}
+\newcommand{\研究課題名}{\mgfamily\sffamily ちょめちょめ}
 
 %----- 研究機関名と研究代表者の氏名-----------------------
-\newcommand{\研究機関名}{逢坂大学}
-\newcommand{\研究代表者氏名}{湯川秀樹}
-\newcommand{\me}{\underline{\underline{H.~Yukawa}}} 
+\newcommand{\研究機関名}{\mgfamily\sffamily 名古屋大学}
+\newcommand{\研究代表者氏名}{\mgfamily\sffamily 多田祐一郎}
+\newcommand{\me}{\underline{\underline{Y.~Tada}}} 
 %---- 研究期間の最終年度 ----------------
 \newcommand{\研究期間の最終元号年度}{34}  %平成で、半角数字のみ
 %========================================
@@ -33,10 +33,23 @@
 %\DeclareGraphicsRule{.tif}{png}{.png}{`convert #1 `dirname #1`/`basename #1 .tif`.png}
 \usepackage{lineno}
 
+\usepackage[dvipdfmx]{graphicx,xcolor}
+\usepackage[multi,deluxe,bold,expert]{otf}
+
 % ===== my personal definitions ==================================
 % ここに、自分のよく使う記号などを定義して下さい。
 \newcommand{\klpionn}{K_L \to \pi^0 \nu \overline{\nu}}
 \newcommand{\kppipnn}{K^+ \to \pi^+ \nu \overline{\nu}}
+
+\renewcommand{\emph}[1]{{\sffamily\gtfamily\bfseries #1}}
+\newcommand{\subject}[1]{\noindent{\sffamily\gtfamily\bfseries #1}~~}
+\newcommand{\subsubject}[1]{\noindent \underline{#1}~~}
+\newcommand{\Red}[1]{\textcolor{red}{\sffamily\gtfamily\bfseries #1}}
+\renewcommand{\bf}{\bfseries\sffamily\gtfamily}
+
+\newenvironment{footnoteSBL}{
+	\baselineskip=10pt
+}
 
 % ===== 欄外メモ ==================
 \newcommand{\memo}[1]{\marginpar{#1}}
@@ -58,6 +71,7 @@
 \noindent
 \textbf{（概要）}\\
 %begin 研究目的及び研究計画の概要空行付き ＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝＝
+	\mgfamily\sffamily
 	象の卵の研究の目的は．．．	
 
 	象の卵の研究計画と方法は．．．
